@@ -1,0 +1,787 @@
+{
+    "desecrated_zones": [
+        {
+            "start_time_utc": "2023-01-27 00:00:00",
+            /* "end_time_utc": "2022-12-15 00:00:00", */ /* Use end time to automate multiple configs. Useful for events. */
+            "terror_duration_min": 60,
+            "terror_break_min": 0,
+            "seed": 16664395743969097666, /* UInt64. Can't be above 18446744073709551615 */
+            "non_ladder_enabled": true,
+            "enabled_normal": true,
+            "enabled_nightmare": true,
+            "enabled_hell": true,
+            "default_normal": {
+                "bound_incl_min": 3, /* Minimum level of a terrorized monster. MAX(bound_incl_min, original_monster_level) */
+                "bound_incl_max": 45, /* Maximum level of a terrorized monster. MAX(bound_incl_max, original_monster_level) */
+                "boost_level": 2, /* player_level + boost_level = terrorized_monster_level */
+                "difficulty_scale": 1, /* Fake the amount of players in the game. AKA /players X */
+                "boost_experience_percent": 25 /* Bonus experience percentage applied at to the monster's base experience in monstats.txt */
+            },
+            "default_nightmare": {
+                "bound_incl_min": 40,
+                "bound_incl_max": 71,
+                "boost_level": 2,
+                "difficulty_scale": 1,
+                "boost_experience_percent": 25
+            },
+            "default_hell": {
+                "bound_incl_min": 105,
+                "bound_incl_max": 105,
+                "boost_level": 0,
+                "difficulty_scale": 1,
+                "boost_experience_percent": 35
+            },
+            "warnings": [
+                {
+                    "announce_time_min": 10,
+                    "tier": 1
+                },
+                {
+                    "announce_time_min": 5,
+                    "tier": 2
+                },
+                {
+                    "announce_time_min": 1,
+                    "tier": 3
+                },
+                {
+                    /* DO NOT REMOVE! ALWAYS NEED A TIER 0 AT MINUTE 0. DO NOT REMOVE! */
+                    "announce_time_min": 0,
+                    "tier": 0
+                }
+            ],
+            "zones": [
+                {
+                    "id": 1,
+                    /* You can have a MAX of 20 desecrated levels at a time */
+                    "levels": [
+                        {
+                            /* Cold Plains + The Cave + Rocky Waste + Stony Tomb + Flayer Jungle + Flayer Dungeon + Swampy Pit + Outer Steppes + Plains of Despair + Bloody Foothills + Frigid Highlands + Abaddon*/
+                            "level_id": 3,
+                            "waypoint_level_id": 3
+                        },
+                        {
+                            "level_id": 9
+                        },
+                        {
+                            "level_id": 13
+                        },
+                        {
+                            "level_id": 41,
+                            "waypoint_level_id": 40
+                        },
+                        {
+                            "level_id": 55
+                        },
+                        {
+                            "level_id": 59
+                        },
+                        {
+                            "level_id": 78,
+                            "waypoint_level_id": 78
+                        },
+                        {
+                            "level_id": 88
+                        },
+                        {
+                            "level_id": 89
+                        },
+                        {
+                            "level_id": 91
+                        },
+                        {
+                            "level_id": 86
+                        },
+                        {
+                            "level_id": 87
+                        },
+                        {
+                            "level_id": 90
+                        },
+                        {
+                            "level_id": 104,
+                            "waypoint_level_id": 103
+                        },
+                        {
+                            "level_id": 105
+                        },
+                        {
+                            "level_id": 110
+                        },
+                        {
+                            "level_id": 111,
+                            "waypoint_level_id": 111
+                        },
+                        {
+                            "level_id": 125
+                        }
+                    ]
+                },
+                {
+                    /* The Secret Cow Level + Dry Hills + Halls of Dead + Kurast Bazaar + Ruined Temple + Disused Fane + River of Flame + City of the Damned + Crystalline Passage + Frozen River */
+                    "id": 2,
+                    "levels": [
+                        {
+                            "level_id": 39,
+                            "waypoint_level_id": 1
+                        },
+                        {
+                            "level_id": 42,
+                            "waypoint_level_id": 42
+                        },
+                        {
+                            "level_id": 56
+                        },
+                        {
+                            "level_id": 57
+                        },
+                        {
+                            "level_id": 60
+                        },
+                        {
+                            "level_id": 80,
+                            "waypoint_level_id": 80
+                        },
+                        {
+                            "level_id": 94
+                        },
+                        {
+                            "level_id": 95
+                        },
+                        {
+                            "level_id": 106,
+                            "waypoint_level_id": 106
+                        },
+                        {
+                            "level_id": 107
+                        },
+                        {
+                            "level_id": 113,
+                            "waypoint_level_id": 113
+                        },
+                        {
+                            "level_id": 114
+                        }
+                    ]
+                },
+                {
+                    /* Tamoe Highland + The Pit + Far Oasis + Maggot Lair + Durance of Hate + Chaos Sanctuary + Worldstone Keep + Throne of Destruction + Worldstone Chamber */
+                    "id": 3,
+                    "levels": [
+                        {
+                            "level_id": 7,
+                            "waypoint_level_id": 27
+                        },
+                        {
+                            "level_id": 12
+                        },
+                        {
+                            "level_id": 16
+                        },
+                        {
+                            "level_id": 43,
+                            "waypoint_level_id": 43
+                        },
+                        {
+                            "level_id": 62
+                        },
+                        {
+                            "level_id": 63
+                        },
+                        {
+                            "level_id": 64
+                        },
+                        {
+                            "level_id": 101,
+                            "waypoint_level_id": 101
+                        },
+                        {
+                            "level_id": 100
+                        },
+                        {
+                            "level_id": 102
+                        },
+                        {
+                            "level_id": 108,
+                            "waypoint_level_id": 107
+                        },
+                        {
+                            "level_id": 129,
+                            "waypoint_level_id": 129
+                        },
+                        {
+                            "level_id": 128
+                        },
+                        {
+                            "level_id": 130
+                        },
+                        {
+                            "level_id": 131
+                        },
+                        {
+                            "level_id": 132
+                        }
+                    ]
+                },
+                {
+                    /* Jail + Barracks + Ancient Tunnels + Lost City + Claw Viper Temple + Travincal + Ruined Fane + Disused Reliquary + Outer Steppes + Plains of Despair + Ancient’s Way + Icy Cellar */
+                    "id": 4,
+                    "levels": [
+                        {
+                            "level_id": 29,
+                            "waypoint_level_id": 29
+                        },
+                        {
+                            "level_id": 30
+                        },
+                        {
+                            "level_id": 31
+                        },
+                        {
+                            "level_id": 28
+                        },
+                        {
+                            "level_id": 44,
+                            "waypoint_level_id": 44
+                        },
+                        {
+                            "level_id": 58
+                        },
+                        {
+                            "level_id": 61
+                        },
+                        {
+                            "level_id": 65
+                        },
+                        {
+                            "level_id": 83,
+                            "waypoint_level_id": 83
+                        },
+                        {
+                            "level_id": 98
+                        },
+                        {
+                            "level_id": 99
+                        },
+                        {
+                            "level_id": 104,
+                            "waypoint_level_id": 103
+                        },
+                        {
+                            "level_id": 105
+                        },
+                        {
+                            "level_id": 118,
+                            "waypoint_level_id": 118
+                        },
+                        {
+                            "level_id": 119
+                        }
+                    ]
+                },
+                {
+                    /* Tamoe Highland + The Pit + Tal Rasha’s Tombs + Tal Rasha’s Chamber + Durance of Hate + River of Flame + City of the Damned + Crystalline Passage + Frozen River */
+                    "id": 5,
+                    "levels": [
+                        {
+                            "level_id": 7,
+                            "waypoint_level_id": 27
+                        },
+                        {
+                            "level_id": 12
+                        },
+                        {
+                            "level_id": 16
+                        },
+                        {
+                            "level_id": 66,
+                            "waypoint_level_id": 46
+                        },
+                        {
+                            "level_id": 67
+                        },
+                        {
+                            "level_id": 68
+                        },
+                        {
+                            "level_id": 69
+                        },
+                        {
+                            "level_id": 70
+                        },
+                        {
+                            "level_id": 71
+                        },
+                        {
+                            "level_id": 72
+                        },
+                        {
+                            "level_id": 73
+                        },
+                        {
+                            "level_id": 101,
+                            "waypoint_level_id": 101
+                        },
+                        {
+                            "level_id": 100
+                        },
+                        {
+                            "level_id": 102
+                        },
+                        {
+                            "level_id": 106,
+                            "waypoint_level_id": 106
+                        },
+                        {
+                            "level_id": 107
+                        },
+                        {
+                            "level_id": 113,
+                            "waypoint_level_id": 113
+                        },
+                        {
+                            "level_id": 114
+                        }
+                    ]
+                },
+                {
+                    /* Cathedral and Catacombs + Harem lvl 2 + Palace Cellar lvl + Kurast Bazaar + Ruined Temple + Disused Fane + Outer Steppes + Plains of Despair + Worldstone Keep + Throne of Destruction + Worldstone Chamber */
+                    "id": 6,
+                    "levels": [
+                        {
+                            "level_id": 33,
+                            "waypoint_level_id": 35
+                        },
+                        {
+                            "level_id": 35
+                        },
+                        {
+                            "level_id": 34
+                        },
+                        {
+                            "level_id": 36
+                        },
+                        {
+                            "level_id": 37
+                        },
+                        {
+                            "level_id": 51,
+                            "waypoint_level_id": 52
+                        },
+                        {
+                            "level_id": 50
+                        },
+                        {
+                            "level_id": 52
+                        },
+                        {
+                            "level_id": 53
+                        },
+                        {
+                            "level_id": 54
+                        },
+                        {
+                            "level_id": 80,
+                            "waypoint_level_id": 80
+                        },
+                        {
+                            "level_id": 94
+                        },
+                        {
+                            "level_id": 95
+                        },
+                        {
+                            "level_id": 104,
+                            "waypoint_level_id": 103
+                        },
+                        {
+                            "level_id": 105
+                        },
+                        {
+                            "level_id": 129,
+                            "waypoint_level_id": 129
+                        },
+                        {
+                            "level_id": 128
+                        },
+                        {
+                            "level_id": 130
+                        },
+                        {
+                            "level_id": 131
+                        },
+                        {
+                            "level_id": 132
+                        }
+                    ]
+                },
+                {
+                    /* Moo Moo Farm + Arcane Sanctuary + Travincal + Ruined Fane + Disused Reliquary + Chaos Sanctuary + Nihlathak’s Temple + Temple Halls (Anguish, Pain)*/
+                    "id": 7,
+                    "levels": [
+                        {
+                            "level_id": 39,
+                            "waypoint_level_id": 1
+                        },
+                        {
+                            "level_id": 74,
+                            "waypoint_level_id": 74
+                        },
+                        {
+                            "level_id": 83,
+                            "waypoint_level_id": 83
+                        },
+                        {
+                            "level_id": 98
+                        },
+                        {
+                            "level_id": 99
+                        },
+                        {
+                            "level_id": 108,
+                            "waypoint_level_id": 107
+                        },
+                        {
+                            "level_id": 121
+                        },
+                        {
+                            "level_id": 122,
+                            "waypoint_level_id": 123
+                        },
+                        {
+                            "level_id": 123
+                        },
+                        {
+                            "level_id": 124
+                        }
+                    ]
+                },
+                {
+                    /* Black Marsh + Hole + Forgotten Tower (Tower Cellar 1-5) + Sewers + Durance of Hate + River of Flame + City of the Damned + Bloody Foothills + Frigid Highlands + Abaddon */
+                    "id": 8,
+                    "levels": [
+                        {
+                            "level_id": 6,
+                            "waypoint_level_id": 6
+                        },
+                        {
+                            "level_id": 11
+                        },
+                        {
+                            "level_id": 15
+                        },
+                        {
+                            "level_id": 20
+                        },
+                        {
+                            "level_id": 21
+                        },
+                        {
+                            "level_id": 22
+                        },
+                        {
+                            "level_id": 23
+                        },
+                        {
+                            "level_id": 24
+                        },
+                        {
+                            "level_id": 25
+                        },
+                        {
+                            "level_id": 47,
+                            "waypoint_level_id": 40
+                        },
+                        {
+                            "level_id": 48
+                        },
+                        {
+                            "level_id": 49
+                        },
+                        {
+                            "level_id": 101,
+                            "waypoint_level_id": 101
+                        },
+                        {
+                            "level_id": 100
+                        },
+                        {
+                            "level_id": 102
+                        },
+                        {
+                            "level_id": 106,
+                            "waypoint_level_id": 106
+                        },
+                        {
+                            "level_id": 107
+                        },
+                        {
+                            "level_id": 110
+                        },
+                        {
+                            "level_id": 111,
+                            "waypoint_level_id": 111
+                        },
+                        {
+                            "level_id": 125
+                        }
+                    ]
+                },
+                {
+                    /* Cathedral and Catacombs + Rocky Waste + Stony Tomb + Travincal + Ruined Fane + Disused Reliquary + River of Flame + City of the Damned + Worldstone Keep + Throne of Destruction + Worldstone Chamber */
+                    "id": 9,
+                    "levels": [
+                        {
+                            "level_id": 33,
+                            "waypoint_level_id": 35
+                        },
+                        {
+                            "level_id": 35
+                        },
+                        {
+                            "level_id": 34
+                        },
+                        {
+                            "level_id": 36
+                        },
+                        {
+                            "level_id": 37
+                        },
+                        {
+                            "level_id": 41,
+                            "waypoint_level_id": 40
+                        },
+                        {
+                            "level_id": 55
+                        },
+                        {
+                            "level_id": 59
+                        },
+                        {
+                            "level_id": 83,
+                            "waypoint_level_id": 83
+                        },
+                        {
+                            "level_id": 98
+                        },
+                        {
+                            "level_id": 99
+                        },
+                        {
+                            "level_id": 106,
+                            "waypoint_level_id": 106
+                        },
+                        {
+                            "level_id": 107
+                        },
+                        {
+                            "level_id": 129,
+                            "waypoint_level_id": 129
+                        },
+                        {
+                            "level_id": 128
+                        },
+                        {
+                            "level_id": 130
+                        },
+                        {
+                            "level_id": 131
+                        },
+                        {
+                            "level_id": 132
+                        }
+                    ]
+                },
+                {
+                    /* Black Marsh + Hole + Forgotten Tower (Tower Cellar 1-5) + Harem lvl 2 + Palace Cellar lvl + Upper Kurast + Forgotten Reliquary + Forgotten Temple + Chaos Sanctuary + Glacial Trail + Drifter Caven */
+                    "id": 10,
+                    "levels": [
+                        {
+                            "level_id": 6,
+                            "waypoint_level_id": 6
+                        },
+                        {
+                            "level_id": 11
+                        },
+                        {
+                            "level_id": 15
+                        },
+                        {
+                            "level_id": 20
+                        },
+                        {
+                            "level_id": 21
+                        },
+                        {
+                            "level_id": 22
+                        },
+                        {
+                            "level_id": 23
+                        },
+                        {
+                            "level_id": 24
+                        },
+                        {
+                            "level_id": 25
+                        },
+                        {
+                            "level_id": 51,
+                            "waypoint_level_id": 52
+                        },
+                        {
+                            "level_id": 52
+                        },
+                        {
+                            "level_id": 50
+                        },
+                        {
+                            "level_id": 53
+                        },
+                        {
+                            "level_id": 54
+                        },
+                        {
+                            "level_id": 81,
+                            "waypoint_level_id": 81
+                        },
+                        {
+                            "level_id": 96
+                        },
+                        {
+                            "level_id": 97
+                        },
+                        {
+                            "level_id": 108,
+                            "waypoint_level_id": 107
+                        },
+                        {
+                            "level_id": 115,
+                            "waypoint_level_id": 115
+                        },
+                        {
+                            "level_id": 116
+                        }
+                    ]
+                },
+                {
+                    /* Tamoe Highland + The Pit + Dry Hills + Halls of Dead + Travincal + Ruined Fane + Disused Reliquary + Outer Steppes + Plains of Despair + Ancient’s Way + Icy Cellar */
+                    "id": 11,
+                    "levels": [
+                        {
+                            "level_id": 7,
+                            "waypoint_level_id": 27
+                        },
+                        {
+                            "level_id": 12
+                        },
+                        {
+                            "level_id": 16
+                        },
+                        {
+                            "level_id": 42,
+                            "waypoint_level_id": 42
+                        },
+                        {
+                            "level_id": 56
+                        },
+                        {
+                            "level_id": 57
+                        },
+                        {
+                            "level_id": 60
+                        },       
+                        {
+                            "level_id": 83,
+                            "waypoint_level_id": 83
+                        },
+                        {
+                            "level_id": 98
+                        },
+                        {
+                            "level_id": 99
+                        },
+                        {
+                            "level_id": 104,
+                            "waypoint_level_id": 103
+                        },
+                        {
+                            "level_id": 105
+                        },
+                        {
+                            "level_id": 118,
+                            "waypoint_level_id": 118
+                        },
+                        {
+                            "level_id": 119
+                        }
+                    ]
+                },
+                {
+                    /* Moo Moo Farm + Tal Rasha’s Tombs + Tal Rasha’s Chamber + Durance of Hate + Chaos Sanctuary + Worldstone Keep + Throne of Destruction + Worldstone Chamber */
+                    "id": 12,
+                    "levels": [
+                        {
+                            "level_id": 39,
+                            "waypoint_level_id": 1
+                        },
+                        {
+                            "level_id": 66,
+                            "waypoint_level_id": 46
+                        },
+                        {
+                            "level_id": 67
+                        },
+                        {
+                            "level_id": 68
+                        },
+                        {
+                            "level_id": 69
+                        },
+                        {
+                            "level_id": 70
+                        },
+                        {
+                            "level_id": 71
+                        },
+                        {
+                            "level_id": 72
+                        },
+                        {
+                            "level_id": 73
+                        },
+                        {
+                            "level_id": 101,
+                            "waypoint_level_id": 101
+                        },
+                        {
+                            "level_id": 100
+                        },
+                        {
+                            "level_id": 102
+                        },
+                        {
+                            "level_id": 108,
+                            "waypoint_level_id": 107
+                        },
+                        {
+                            "level_id": 129,
+                            "waypoint_level_id": 129
+                        },
+                        {
+                            "level_id": 128
+                        },
+                        {
+                            "level_id": 130
+                        },
+                        {
+                            "level_id": 131
+                        },
+                        {
+                            "level_id": 132
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
